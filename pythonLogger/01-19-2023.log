@@ -1,0 +1,7 @@
+2023-01-19 06:27:15,770: MYPYLOGGER DEBUG - debug message mypylogger ########## BEGIN ##########
+2023-01-19 06:30:17,473: MYPYLOGGER DEBUG - debug message mypylogger ########## BEGIN ##########
+2023-01-19 06:30:17,479: MYPYLOGGER DEBUG - debug message mypylogger DECORATED Function: TEST_IT called  ##########
+2023-01-19 06:30:17,479: MYPYLOGGER DEBUG - Inside my code of the function TEST_IT
+2023-01-19 06:50:06,279: MYPYLOGGER DEBUG - debug message mypylogger ########## BEGIN ##########
+2023-01-19 06:50:37,855: MYPYLOGGER DEBUG - debug message mypylogger DECORATED Function: TEST_IT called  ##########
+2023-01-19 06:50:39,557: MYPYLOGGER DEBUG - Inside my code of the function TEST_IT
