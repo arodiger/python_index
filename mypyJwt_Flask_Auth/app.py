@@ -8,12 +8,13 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'a9ea845876aa4e4ea6e65ac196752d69'
 
-
+# pulling token from querystring in this scenerio
 def token_required(func):
     # decorator factory which invoks update_wrapper() method and passes decorated function as an argument
+    # http://...url?token=slslkdlkjlk4556lkj67lkjl
     @wraps(func)
     def decorated(*args, **kwargs):
-        token = request.args.get('token')
+        token = request.args.get('token')       
         if not token:
             return jsonify({'Alert!': 'Token is missing!'}), 401
         try:
@@ -59,11 +60,11 @@ def login():
         return make_response('Unable to verify', 403, {'WWW-Authenticate': 'Basic realm: "Authentication Failed "'})
 
 
-# Homework: You can try to create a logout page
+# try to create a logout page
 @app.route('/logout', methods=['POST'])
 def logout():
     pass
-# your code goes here
+# code here
 
 
 if __name__ == "__main__":
